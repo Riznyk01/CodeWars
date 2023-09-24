@@ -7,7 +7,14 @@ import (
 
 func main() {
 	var inp int
-	fmt.Scan(&inp)
+
+	_, err := fmt.Scan(&inp)
+
+	if err != nil {
+		fmt.Println("Input error:", err)
+		return
+	}
+
 	fmt.Println(Digitize(inp))
 }
 func Digitize(n int) []int {
