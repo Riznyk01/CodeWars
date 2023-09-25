@@ -15,6 +15,7 @@ func main() {
 	fmt.Println(ProductFib(num))
 }
 
+// ProductFib returns the two following Fibonacci Numbers that multiplied result in parameter prod
 func ProductFib(prod uint64) [3]uint64 {
 	var n1, n2, sum uint64
 	arr := [3]uint64{0, 0, 0}
