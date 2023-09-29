@@ -10,11 +10,7 @@ func main() {
 		fmt.Println("Input error:", err)
 		return
 	}
-	if num < 10 {
-		fmt.Println(num)
-	} else {
-		fmt.Println(DigitalRoot(num))
-	}
+	fmt.Println(DigitalRoot(num))
 }
 func DigitalRoot(n int) int {
 	return (n-1)%9 + 1
